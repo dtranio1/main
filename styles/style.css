@@ -1,0 +1,703 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/*Header Styles*/
+header {
+	background: url(../assets/image-1.jpeg);
+    background-size: cover;
+	position: relative;
+	font-family: "Open Sans", sans-serif;
+	display: flex;
+    text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #b2b2b2;
+}
+
+a:hover{
+	color:white;
+}
+
+hr {
+	width: 80%;
+    opacity: 0.2;
+}
+
+h2{
+	font-family: "Great Vibes", sans-serif;
+	font-weight: 300;
+	font-size: 6rem;
+}
+
+.orangeTwitter{
+	color:#E1560E;
+}
+
+.orange{
+	color: #E1560E;
+	font-family: "Great Vibes", sans-serif;
+	font-weight: 300;
+	font-size: 6rem;
+}
+
+.headerOptions {
+	display: flex;
+	flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    flex-basis: 250px;
+    z-index: 1;
+}
+
+.textPassion {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding-bottom:260px;
+	padding-left:100px;
+	display: flex;
+	flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+	margin: 30px 0;
+}
+
+.menu li {
+    padding: 25px 0;
+    text-align:left;
+    margin-left: 80px;
+}
+
+.menu ul {
+	font-size:1.3rem;
+	list-style: none;
+	text-transform: uppercase;
+	padding: 0;
+}
+
+.menu li:hover{
+	color:white;
+}
+
+.twitter {
+	width: 200px;
+	margin: 50px 0;
+    align-self: center;
+}
+
+.twitterText {
+    word-wrap: break-word;
+    color: #b2b2b2;
+    line-height: 2;
+}
+
+.twitterText a{
+	color:white;
+}
+
+.twitterLink{
+	color: #C84C13;
+}
+
+.time{
+	color: #b2b2b2;
+}
+
+.twitter svg {
+	font-size: 3rem;
+    color: #C84C13;
+}
+
+.share{
+	padding:20px;
+	margin:30px 0;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.share p{
+	font-size:1.5rem;
+	color:#b2b2b2;
+	margin:5px;
+}
+
+.share svg{
+	font-size:25px;
+	color:#b2b2b2;
+	margin-bottom:30px;
+}
+
+.button{
+	background:#e1560e;
+	margin-top:40px;
+	border-radius: 5px;
+	margin-left:25px;
+	padding:20px 60px;
+	color:white;
+	text-transform:uppercase;
+}
+
+.button:hover{
+	background: linear-gradient(to bottom right, rgba(225, 106, 40,0.9),rgba(225, 106, 40,0.9));
+	color:white
+}
+
+/*End Header Styles*/
+
+/*About Chef Styles*/
+.aboutChef{
+	display: flex;
+	overflow:hidden;
+}
+
+/*About Left Side Styles*/
+.aboutLeft{
+	background-color:#eae5d6;
+	width:50%;
+	padding-top:50px;
+}
+
+.aboutLeft h2, .aboutLeft span{
+	font-family: "Great Vibes", sans-serif;
+	font-weight: 300;
+	font-size: 6rem;
+	display:flex;
+	justify-content: center;
+	padding-right: 15px;
+	margin-bottom:0;
+}
+
+.aboutLeft h3{
+	font-family:"Open Sans", sans-serif;
+	font-weight:300;
+	font-size:2.4rem;
+	margin-bottom:0;
+}
+	
+.aboutLeft h4{
+	color: #E1560E;
+	font-family:"Open Sans", sans-serif;
+	font-size:1.4rem;
+	font-weight:500;
+	margin-top:10px;
+}
+
+.arrows{
+	display:flex;
+	font-size:4rem;
+	margin-left:310px;
+}
+
+.arrows a{
+	color:#23292c;
+}
+
+.arrows a:hover{
+	color:#e1560e;
+}
+
+.arrows a:first-child{
+	margin-right:20px;
+}
+
+.chef{
+	display:flex;
+	justify-content: center;
+	margin-top:20px;
+	margin-right:20px;
+}
+
+.chefDescription{
+	margin-left:310px;
+	line-height:1.5;
+}
+
+.profilePic{
+	border-radius:10rem;
+	width:13%;
+	height:13%;
+	margin-right:10px;
+	display:block;
+}
+
+.chefDescription p{
+	font-family:"Open Sans", sans-serif;
+	color: #b2b2b2;
+	font-size: 1.6rem;
+	font-weight: 100;
+}
+
+.chefDescription h4{
+	font-family:"Open Sans", sans-serif;
+	font-weight:700;
+	font-style: italic;
+	font-size:1.8rem;
+	color:black;
+}
+/*End About Left Side Styles*/
+
+/*About Right Styles*/
+.aboutRight{
+	width:50%;
+}
+
+.aboutRight img{
+	display:block;
+}
+/*About Right Styles End*/
+/*About Chef Styles End*/
+
+/*Gallery Styles*/
+.gallery h2{
+	font-family:"Great Vibes", sans-serif;
+	font-size:6rem;
+	font-weight:500;
+	color:white;
+	margin-bottom:30px;
+}
+
+.galleryDescription{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+	background:#23292c;
+}
+
+.galleryDescription p{
+	color:white;
+	font-family:"Open Sans", sans-serif;
+	margin:5px;
+	font-style:italic;
+}
+
+.galleryCategories{
+	width:500px;
+	display:flex;
+	font-family:"Open Sans", sans-serif;
+	font-size:1.2rem;
+	border:1px solid white;
+	text-transform:uppercase;
+	border-radius:5px;
+	background:rgb(40,50,60);
+	color: #b2b2b2;
+	list-style:none;
+	margin:30px 0;
+	padding:0px;
+}
+
+.galleryCategories li.category{
+	text-align:center;
+	margin:10px 23px;
+	color: #b2b2b2;
+}
+
+.line{
+	margin:10px 0;
+}
+
+.galleryContent{
+	display:flex;
+	flex-wrap:wrap;
+	overflow:hidden;
+}
+
+.galleryItem{
+	width:20%;
+	position:relative;
+}
+
+.galleryItem img{
+	display:block;
+	display:relative;
+	width:100%;
+	height:100%;
+}
+
+.galleryCaption{
+	display:block;
+	margin:auto;
+}
+
+.overlay{
+	background: rgba(255, 255, 255, 0.3);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	position:absolute;
+	transition: all 1s;
+	opacity: 0;
+}
+
+.overlay p{
+	color:white;
+	margin:7px auto;
+}
+
+.galleryItem:hover .overlay{
+	opacity: 1;
+}
+
+.overlayIcons{
+	position:absolute;
+	display:flex;
+	width:25%;
+	bottom:0;
+	left:0;
+}
+
+.linkIcon{
+	width:40px;
+	padding:7px;
+	border-right:1px solid grey;
+	background:#eae5d6;
+}
+
+.searchIcon{
+	width:40px;
+	padding:7px;
+	background:#eae5d6;
+}
+
+.itemTitle{
+	font-family:"Playfair Display", sans-serif;
+	font-size:2.5rem;
+}
+
+.subtitle{
+	font-family:"Playfair Display", sans-serif;
+	font-size:1.3rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+/*Gallery Styles End*/
+
+/*Our Services Styles*/
+.servicesText h2{
+	text-align: center;
+}
+
+.servicesText p{
+	text-align: center;
+	font-family:"Open Sans", sans-serif;
+	font-style:italic;
+	color:#b2b2b2;;
+	margin-bottom:20px;
+}
+
+.mealType{
+	display:flex;
+	justify-content: space-between;
+	margin:0 400px;
+}
+
+.mealType img{
+	width:50%;
+	height:50%;
+	margin-top:50px;
+	margin-bottom:20px;
+}
+
+.mealType h3{
+	margin:10px;
+}
+
+.mealTitle{
+	font-family:"Open Sans", sans-serif;
+	font-weight: 500;
+	font-size:2rem;
+	text-align: center;
+	color:#e1560e;
+}
+
+.breakfast,.lunch,.dinner,.custom{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.mealType p{
+	font-family:"Open Sans", sans-serif;
+	font-weight: 500;
+	font-size:1.5rem;
+	text-align: center;
+	color:#b2b2b2;
+	line-height: 1.5;
+}
+/*Our Services Styles End */
+
+/*Breakfast Menu Styles*/
+.breakfastMenuText h2{
+	text-align: center;
+}
+
+.arrows2 a{
+	position:absolute;
+	color:white;
+}
+
+.leftArrow{
+	top:10%;
+	left:73%;
+}
+
+.rightArrow{
+	top:10%;
+	left:77%;
+}
+
+.breakfastMenu{	
+	position:relative;
+	margin-top:55px;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), 100%, rgba(0,0,0,0)),url(../assets/image-13-2.jpg);
+	background-size: cover;
+	display:flex;
+}
+
+.breakfastMenuText{
+	color:white;
+	min-width: 100%;
+}
+
+.menuWrapper{
+	display:flex;
+}
+
+.menuLeft{
+	display:flex;
+	flex-direction: column;
+	width:28%;
+	margin-left:420px;
+}
+
+.menuRight{
+	display:flex;
+	flex-direction: column;
+	width:28%;
+}
+
+.breakfastMenu li:nth-child(odd){
+	font-family:"Playfair Display", sans-serif;
+	font-weight: 100;
+	font-size:1.9rem;
+}
+
+.breakfastMenu li:nth-child(even){
+	font-family:"Open Sans", sans-serif;
+	font-weight: 100;
+	font-style:italic;
+	font-size:1.4rem;
+	text-align:left;
+	margin-bottom:25px;
+}
+
+.breakfastMenu ul{
+	list-style:none;
+}
+
+li{
+	padding:0.5%;
+}
+
+.breakfastButton{
+	margin-bottom:80px;
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+}
+
+.button2{
+	font-family:"Open Sans", sans-serif;
+	background:#e1560e;
+	border-radius: 5px;
+	margin-top:50px;
+	padding:20px 60px;
+	color:white;
+	text-transform:uppercase;
+}
+
+.button2:hover{
+	background: linear-gradient(to bottom right, rgba(225, 106, 40,0.9),rgba(225, 106, 40,0.9));
+	color:white
+}
+
+.leaders li.dots::after {
+	display: block;
+	content: "";
+	overflow: hidden;
+	height: 1.4rem;
+	border-bottom: 1px dotted white;
+}
+
+.leaders li span:first-child {
+	float: left;
+}
+.leaders li span + span {
+	float: right;
+}
+
+/*Breakfast Menu Styles End*/
+ 
+ /*Footer Styles*/
+.map img{
+	width:100%;
+}
+
+.mapMarker{
+	position:absolute;
+	width:1.5%;
+	top:7%;
+	left:50%;
+}
+
+footer{
+	background:#23292c;
+	width:100%;
+	padding-bottom:130px;
+	position:relative;
+}
+
+.contactLeft img{
+	width:65%;
+	margin-bottom:30px;
+	margin-right:50px;
+}
+
+.contactLeft{
+	margin:0;
+	width:20%;
+	height:200px;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.okay svg{
+	color:rgb(115,132,142);
+	font-size:2.5rem;
+	margin:0 10px;
+}
+
+.okay{
+	display:flex;
+	margin-right:50px;
+}
+
+.mainFooter{
+	display:flex;
+	justify-content: space-between;
+	margin-top:50px;
+}
+
+.wrapperFooter{
+	margin:70px auto;
+	max-width:65%;
+	display:flex;
+	justify-content: space-between;
+}
+
+.contactIcons{
+	display:flex;
+	flex-direction: column;
+	margin-right:10px;
+}
+
+.contactUsInfo{
+	line-height: 0.5;
+	font-size:1.5rem;
+	font-family:"Open Sans", sans-serif;
+	color:#b2b2b2;
+}
+
+.iconSpace {
+	margin-top:10px;
+}
+
+.iconSpace2{
+	margin-top:80px;
+}
+
+.iconSpace3{
+	margin-top:35px;
+}
+
+.contactRight{
+	height:205px;
+	display:flex;
+}
+
+.form{
+	background:white;
+	width:30%;
+	height:50%;
+	position:absolute;
+	top:25%;
+	left:34%;
+}
+
+.form h2{
+	margin:20px auto;
+	text-align: center;
+}
+
+.fa-user{
+	position:absolute;
+	font-size:2rem;
+	top:24%;
+	left:78%;
+}
+
+.fa-envelope{
+	position:absolute;
+	font-size:2rem;
+	top:33%;
+	left:78%;
+}
+
+input, textarea{
+	display:block;
+	font-family:"Open Sans", sans-serif;
+	margin:8px auto;
+	font-weight:700;
+	padding:7px;
+	width:70%;
+	position:relative;
+}
+
+input[type=submit]{
+	margin:50px auto;
+	height:50px;
+	width:200px;
+	background:white;
+   	border: 1px solid black;
+   	text-transform: uppercase;
+   	font-weight:700;
+   	box-shadow: 2px 2px grey;
+}
+
+.copyright{
+	display:block;
+	margin-top:200px;
+	text-align: center;
+	color:#b2b2b2;
+}
+/*Footer Styles End*/
